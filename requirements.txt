@@ -1,0 +1,7 @@
+Pillow<7
+tqdm
+numpy
+torch
+torchvision
+opencv-python
+tensorflow-gpu<2

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- === Header Starts === -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>mGANprior</title>
+
+  <link href="./assets/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/font.css" rel="stylesheet" type="text/css">
+  <link href="./assets/style.css" rel="stylesheet" type="text/css">
+</head>
+<!-- === Header Ends === -->
+
+
+<body>
+
+
+<!-- === Home Section Starts === -->
+<div class="container">
+  <div class="title" style="margin: 20pt 50pt;">
+    Image Processing Using Multi-Code GAN Prior
+  </div>
+  <div class="author">
+    <a href="http://www.jasongt.com" target="_blank">Jinjin Gu</a><sup>1</sup>&nbsp;
+    <a href="http://shenyujun.github.io" target="_blank">Yujun Shen</a><sup>2</sup>&nbsp;
+    <a href="http://bzhou.ie.cuhk.edu.hk" target="_blank">Bolei Zhou</a><sup>2</sup>&nbsp;
+  </div>
+  <div class="institution">
+    <sup>1</sup>The Chinese University of Hong Kong, Shenzhen<br>
+    <sup>2</sup>The Chinese University of Hong Kong
+  </div>
+  <div class="link">
+    <a href="https://arxiv.org/pdf/1912.07116.pdf" target="_blank">[Paper]</a>&nbsp;
+    <a href="https://github.com/genforce/mganprior" target="_blank">[Code]</a>
+  </div>
+  <div class="teaser">
+    <img src="./assets/teaser.jpg">
+  </div>
+</div>
+<!-- === Home Section Ends === -->
+
+
+<!--====== Overview Section Starts ======-->
+<div class="container">
+  <div class="title">Overview</div>
+  <div class="body">
+    We propose multi-code GAN prior (mGANprior) to incorporate the well-trained GANs as effective prior to a variety of image processing tasks. In particular, we employ multiple latent codes to invert a fixed GAN model, and then
+    introduce adaptive channel importance to compose the features maps from these codes at some intermediate layer of
+    the generator. The resulting high-fidelity image reconstruction enables the trained GAN models as prior to many real-world applications, such as image colorization, super-resolution, image inpainting, and semantic manipulation.
+  </div>
+</div>
+<!--====== Overview Section Ends ======-->
+
+
+<!--====== Results Section Starts ======-->
+<div class="container">
+  <div class="title">Results</div>
+  <div class="body">
+    Various image processing tasks with mGANprior.
+
+    <table width="100%" style="margin: 20pt auto; text-align: center;">
+      <tr>
+        <td><img src="./assets/optimization.gif" width="98%"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!--====== Results Section Ends ======-->
+
+
+<!--====== References Section Starts ======-->
+<div class="container">
+  <div class="bibtex">Bibtex</div>
+<pre>
+@inproceedings{gu2020mganprior,
+  title     = {Image Processing Using Multi-Code GAN Prior},
+  author    = {Gu, Jinjin and Shen, Yujun and Zhou, Bolei},
+  booktitle = {CVPR},
+  year      = {2020}
+}
+</pre>
+
+<!--====== References Section Starts ======-->
+  <div class="ref">Related Work</div>
+  <div class="citation">
+    <img src="./assets/interfacegan.jpg">
+    <a href="https://genforce.github.io/interfacegan/">
+      Y. Shen, J. Gu, X. Tang, B. Zhou.
+      Interpreting the Latent Space of GANs for Semantic Face Editing.
+      CVPR 2020.
+    </a>
+    <br>
+    <b>Comment:</b> Interprets the face semantics emerging in the latent space of GANs.
+  </div>
+  <div class="citation">
+    <img src="./assets/gandissect.png">
+    <a href="https://gandissect.csail.mit.edu/">
+      D. Bau, J. Y. Zhu, H. Strobelt, B. Zhou, J. B. Tenenbaum, W. T. Freeman, A. Torralba.
+      GAN Dissection: Visualizing and Understanding Generative Adversarial Networks.
+      ICLR 2019.
+    </a>
+    <br>
+    <b>Comment:</b> Interprets the intermediate representation of GANs.
+  </div>
+  <div class="citation">
+    <img src="./assets/seeing.png">
+    <a href="https://debug-ml-iclr2019.github.io/cameraready/DebugML-19_paper_18.pdf">
+      D. Bau, J. Y. Zhu, J. Wulff, W. Peebles, H. Strobelt, B. Zhou, A. Torralba.
+      Inverting layers of a large generator.
+      ICLRW 2019.
+    </a>
+    <br>
+    <b>Comment:</b> Inverts GANs by layer-wise Encoder Networks.
+  </div>
+  <div class="citation">
+    <img src="./assets/dip.jpg">
+    <a href="https://dmitryulyanov.github.io/deep_image_prior">
+      D. Ulyanov, A. Vedaldi, V. Lempitsky.
+      Deep Image Prior.
+      CVPR 2018.
+    </a>
+    <br>
+    <b>Comment:</b> Uses deep neural networks (discriminative model) as structured image prior.
+  </div>
+  <div class="citation">
+    <img src="./assets/igan.jpg">
+    <a href="http://efrosgans.eecs.berkeley.edu/iGAN/">
+      J. Y. Zhu, P. Krähenbühl, E. Shechtman, Alexei A. Efros.
+      Generative Visual Manipulation on the Natural Image Manifold.
+      ECCV 2016.
+    </a>
+    <br>
+    <b>Comment:</b> Manipulates images by learning the natural image manifold from GANs.
+  </div>
+</div>
+<!--====== References Section Ends ======-->
+
+
+</body>
+</html>
