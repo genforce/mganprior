@@ -8,35 +8,38 @@ First of all, we thank following repositories for their work on high-quality ima
 
 Compared to [InterFaceGAN](https://github.com/ShenYujun/InterFaceGAN) repo, this repo optimizes the common API for generator, improves the pipeline to convert tensorflow weights to pytorch version, and involves model for StyleGAN2.
 
-Pre-trained tensorflow weights (either official released or trained by ourselves)can be found from following links. Please download them and save to path `models/pretrain/tensorflow` before using.
+Pre-trained tensorflow weights (either officially released or trained by ourselves) can be found from following links. Please download them and save to folder `pretrain/tensorflow/` before using.
+
+**NOTE:** The officially released models are simply mirrored by us from the above three repositories, just in case they are not available from the official links.
 
 | PGGAN Official | | | |
 | :-- | :-- | :-- | :-- |
 | Face
-| [celebahq-1024x1024](https://drive.google.com/a/google.com/file/d/188K19ucknC6wg1R6jbuPEhTq9zoufOx4/view?usp=sharing)
+| [celebahq-1024x1024](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/ERkthZuF1rBCrJRURQ5M1W8BbsfT5gFF-TGbuxCAuUJXPQ?e=uKYyQ1)
 | Indoor Scene
-| [bedroom-256x256](https://drive.google.com/a/google.com/file/d/1xbb2xakSn22lZoUcdaydQaBHoBSiUt6T/view?usp=sharing) | [livingroom-256x256](https://drive.google.com/a/google.com/file/d/1yhg7u-OqU8fYQ1A2GaMFwHg_bwKwmszF/view?usp=sharing) | [diningroom-256x256](https://drive.google.com/a/google.com/file/d/1yQRvnMsiMI5mksNkxtdnjJfZyY0W93i-/view?usp=sharing) | [kitchen-256x256](https://drive.google.com/a/google.com/file/d/1ycfRWFtiTl7EzELDQ9IArDnMAxBaGXcj/view?usp=sharing)
+| [bedroom-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EZeWkI9pbUZDqZAzEUDjlSwB5nDZhe94vmmg4G5QSKGy7A?e=5RhTOo) | [livingroom-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EbHv-4YvGYJJl6i4zH8s25kBqpA1RG-YZbAvp2PSc5CtRA?e=SnSk49) | [diningroom-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/Ee2LUJ6fectMiFDYYrZiA1sBD5q4j_FBC8xzH2Z6GSb-JQ?e=pxhVrt) | [kitchen-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/ERTDgXhOqJZPlM72bULyKsgBu7nABHvmCBIbwvASzKruvg?e=lIrB34)
 | Outdoor Scene
-| [churchoutdoor-256x256](https://drive.google.com/a/google.com/file/d/1yGlooC5u4KuiOMzuJiA1W-MW4WB-wqnf/view?usp=sharing) | [tower-256x256](https://drive.google.com/a/google.com/file/d/1z8gUcWvUxtAjKhCzr88BO62NFBLYQ32G/view?usp=sharing) | [bridge-256x256](https://drive.google.com/a/google.com/file/d/1xf1SVhs52o93o_JhnPE2h6mZAM6YkI7t/view?usp=sharing)
+| [churchoutdoor-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EfPAIPVXbYxIn0KQ5IzCJxYBfEG4nP1p7D3MK-N24HLzow?e=za16Z1) | [tower-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EXZGTFQX8gNPgwvCGWKmiIwBxGgU4UTIQy1wezKnpAADMg?e=KUp4hJ) | [bridge-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EXba4rsRrcZDg_6SQk-vClMBmqesihPHY6fne5oobKLHhg?e=9Gk1v3)
 | Other Scene
-| [restaurant-256x256](https://drive.google.com/a/google.com/file/d/1yobti3l5kyeZxT-XJOAwnwRY7K_cdroY/view?usp=sharing) | [classroom-256x256](https://drive.google.com/a/google.com/file/d/1yJHhYysvxE4gVfYB56XVT_M4uea9DjpU/view?usp=sharing) | [conferenceroom-256x256](https://drive.google.com/a/google.com/file/d/1yLZ2YJ1ajh-amUJMpOmFHL9P3810xdqk/view?usp=sharing)
+| [restaurant-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/Eb0vWXX-n5BLkf9jL61ekfwBxHDpFxVLq9igSYJyQ3x5FQ?e=EuqMTU) | [classroom-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EW5vDIwjV6dPsfK_szdVnTABVsd11xvJ_O6-ReVeQsvtQA?e=dls0Jd) | [conferenceroom-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/Eb1kh2L4ayxFjXQL2y34yEkBb_eZ9pcSXnY3ivnvCdeknA?e=wPATWN)
 | Animal
-| [person-256x256](https://drive.google.com/a/google.com/file/d/1ykf1q2wyOJufKUNGtgg2-jgcPvFA3NQd/view?usp=sharing) | [cat-256x256](https://drive.google.com/a/google.com/file/d/1xuFIDNAO_A_fVU0jFcgQd_C9A4Fn8GnT/view?usp=sharing) | [dog-256x256](https://drive.google.com/a/google.com/file/d/1yYmw3rAOIfOCZA0j8JvqYPEpe_NzM76A/view?usp=sharing) | [bird-256x256](https://drive.google.com/a/google.com/file/d/1xce6ct41eKxTjyASRsKY8erSikFpVWG5/view?usp=sharing)
-| [horse-256x256](https://drive.google.com/a/google.com/file/d/1yaqsBv7e10svlLR_CuRyz7KB0TOjMWoq/view?usp=sharing) | [sheep-256x256](https://drive.google.com/a/google.com/file/d/1ysqX37xILHiVA0pscTwcg4FOabLfWQ5A/view?usp=sharing) | [cow-256x256](https://drive.google.com/a/google.com/file/d/1yMxQG3XNoQUBjTWqHvwJx7g2NyiFLNoH/view?usp=sharing)
+| [person-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EbILxVQAbd9HsjxXwiOX2PABWHvmIsgrdwmvF0PPQl8_Xw?e=799btl) | [cat-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/Ebr89QFQnRJHv-OQ7IMgu-YBG02kswtRukk-9ylUqY8bGQ?e=ioo5m4) | [dog-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EeC5DITcQUNFkBPaVFnS4-YBOpFaVb_5agq_vkPG_aFvlg?e=rnq8Rw) | [bird-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EbvqTPl0ru5MicpQbuIePtgBSwDbzef23TgcrCNcFX5A-A?e=jMRaqB)
+| [horse-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EfsJ0u6ZhDhHvleYRd5OCYABCd6Q6uqU1l-AM_C-Cot5_g?e=Fqmudf) | [sheep-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EaIy20hZi5pHkVZhO7p38OoBrjInx6UAFzwAMtG_fcnUCg?e=A6ax03) | [cow-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/ETcm1hzw7M5Mmbi1vHNAA1sBNZcCwXr1Y_y-nwVqEcNHKQ?e=IE0Cu0)
 | Transportation
-| [car-256x256](https://drive.google.com/a/google.com/file/d/1xl6igEIL0N_wSLAocD6lyvTCsHkpRY88/view?usp=sharing) | [bicycle-256x256](https://drive.google.com/a/google.com/file/d/1xcMa9Tl6DXgnJD3CBnyBKd6Q4s_7w3kW/view?usp=sharing) | [motorbike-256x256](https://drive.google.com/a/google.com/file/d/1yj1FR6Oec-lCBLlNanVdXtG3VUNOYJXr/view?usp=sharing) | [bus-256x256](https://drive.google.com/a/google.com/file/d/1xkXOZa4RBdFvBsb-Ozn3iXEPER8d7W1B/view?usp=sharing)
-| [train-256x256](https://drive.google.com/a/google.com/file/d/1zFmU835RjHGcelWkkc_0caIoxWJ4vpXQ/view?usp=sharing) | [boat-256x256](https://drive.google.com/a/google.com/file/d/1xco7Evj7XvCpUbZ6JA1d2yHYVpfu-Xei/view?usp=sharing) | [airplane-256x256](https://drive.google.com/a/google.com/file/d/18IA551HK_tuLETVm0E2RHnffCTu9UvD_/view?usp=sharing)
+| [car-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/Ec6LMgv8jSpJo9MHv39boLkBR6zqrnK_XCjrJdDDoIjfTg?e=HKRIet) | [bicycle-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EW9S1pnWUXtAuHLRcFeoHmYB0vmHwdf6ipxMIPOzxQnOaw?e=pbEBXp) | [motorbike-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/ESiSYhItLfZKnsuW1bA6XPMBHt9Um3p2WvEknOndLgNLtw?e=uVCCIx) | [bus-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EY996zZOBAFDip6W18m0OY0BERSAl_CoVJt0mCUNod2bBg?e=Mt8Qgg)
+| [train-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EeqoMneXJ6hKkuVoKTvgfG8Bbn7yx6FGByzzpF8avQ5ecw?e=7b0rb1) | [boat-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/ESL-wYbgG2NMmEfjNqVe6DcB0wHkx-GeFsWWnmnhK6DL6Q?e=yVwAUW) | [airplane-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EYsnUkaD7kZNjHLCeTcEEaYBjNPO6_wra4Erlh6SMCs3eQ?e=wvRubM)
 | Furniture
-| [bottle-256x256](https://drive.google.com/a/google.com/file/d/1xeY_hVd7Z6_iw6-sJgz0bPIdxWBNSNYa/view?usp=sharing) | [chair-256x256](https://drive.google.com/a/google.com/file/d/1xxQnxpe5cr6RKtmfewtMR8R8O1KG_aFQ/view?usp=sharing) | [pottedplant-256x256](https://drive.google.com/a/google.com/file/d/1yo3Rtx_CJr83ZUxubw2uA_QnGmaBOofn/view?usp=sharing) | [tvmonitor-256x256](https://drive.google.com/a/google.com/file/d/1zHXSmE7320wzmxvBkwWZ_iHk8ArODhnn/view?usp=sharing)
-| [diningtable-256x256](https://drive.google.com/a/google.com/file/d/1yPiqOi7xSiZTTctut4R2bP4ND4jqGMB8/view?usp=sharing) | [sofa-256x256](https://drive.google.com/a/google.com/file/d/1z4WTIl7TAHoLSUoapU4uxuHnouFWpAXZ/view?usp=sharing)
+| [bottle-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EUjdW87xSmVCumxRS0E6OXUB67wxAjappdW4XHvbOx3UgA?e=GT46ho) | [chair-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EYgI1WgBJ5NPomn9BedMkRkBTaKcQOIaoGWQg-oe-eVN8g?e=42YuAT) | [pottedplant-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EdxtDuYh_31Fpc6TA5ZtATQB2b2IqnwG0z4NzDzYfNHSOw?e=QV213z) | [tvmonitor-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EfXmQpZbx35KuZkuZO_C_qsBYaFnnP6Cq9al4NI6-lrqLQ?e=Y2EEy8)
+| [diningtable-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EW0UuwPB3pZNh5jTUDHEl24BaIiqvcB-_9k1TpX3nRFhvw?e=xw7CYQ) | [sofa-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EYHZdQA2DJBGjetN2agEnEEBicfxWbzMMON5wlgNDc5AFw?e=JsTzLG)
 
-| StyleGAN Official |
-| :-- |
-| [ffhq-1024x1024](https://drive.google.com/a/google.com/file/d/1MEGjdvVpUsu1jB4zrXZN7Y4kBBOzizDQ/view?usp=sharing)
-| [celebahq-1024x1024](https://drive.google.com/a/google.com/file/d/1MGqJl28pN4t7SAtSrPdSRJSQJqahkzUf/view?usp=sharing)
-| [bedroom-256x256](https://drive.google.com/a/google.com/file/d/1MOSKeGF0FJcivpBI7s63V9YHloUTORiF/view?usp=sharing)
-| [cat-256x256](https://drive.google.com/a/google.com/file/d/1MQywl0FNt6lHu8E_EUqnRbviagS7fbiJ/view?usp=sharing)
-| [car-512x384](https://drive.google.com/a/google.com/file/d/1MJ6iCfNtMIRicihwRorsM3b7mmtmK9c3/view?usp=sharing)
+| StyleGAN Official | | | |
+| :-- | :--: | :--: | :--: |
+| Model (Dataset) | Training Samples | Training Duration (K Images) | FID
+| [ffhq-1024x1024](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/ERrWZh5VmmFPkMPBqWyj88kBWevxE-_mELOo9toH8LEK9A?e=W7DS8j)     |    70,000 | 25,000 | 4.40
+| [celebahq-1024x1024](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EZLLovAsvOBNhRrElHONwgYBsRy1QRc_kIOGpvHhEUar3w?e=ORRaR3) |    30,000 | 25,000 | 5.06
+| [bedroom-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EZZtgyznB4xNm9gmLyOBHpcB-ohvHMmKZmZx6Tfx9_o8HA?e=gV0ZXi)    | 3,033,042 | 70,000 | 2.65
+| [cat-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/ETHKOTaZPEBNkVoM-zJgDVQBciac5PZFsbVw8raYycDTlA?e=R8oxiP)        | 1,657,266 | 70,000 | 8.53
+| [car-512x384](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EU-MbMEy8IlGtnjXv-dBF7cBZTJoGqG4le-NvyrURvS4Eg?e=IxDwat)        | 5,520,756 | 46,000 | 3.27
 
 | StyleGAN Ours | | | |
 | :-- | :--: | :--: | :--: |
@@ -59,10 +62,11 @@ Pre-trained tensorflow weights (either official released or trained by ourselves
 | [classroom-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EfgXckBHSfZHsf_FUBXAsl8Btt6X0SRr1O8-FqyNbIaXRw?e=yZ5z8q) |     168,103 | 50,000 | 10.10
 | [conferenceroom-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EeOwgtZORopBibIOI022TYIBv1YPVpGy0FLM386olADZOg?e=hzaZzZ) |     229,069 | 50,000 |  6.20
 
-| StyleGAN2 Official |
-| :-- |
-| [ffhq-1024x1024](http://d36zk2xti64re0.cloudfront.net/stylegan2/networks/stylegan2-ffhq-config-f.pkl)
-| [church-256x256](http://d36zk2xti64re0.cloudfront.net/stylegan2/networks/stylegan2-church-config-f.pkl)
-| [cat-256x256](http://d36zk2xti64re0.cloudfront.net/stylegan2/networks/stylegan2-cat-config-f.pkl)
-| [horse-256x256](http://d36zk2xti64re0.cloudfront.net/stylegan2/networks/stylegan2-horse-config-f.pkl)
-| [car-512x384](http://d36zk2xti64re0.cloudfront.net/stylegan2/networks/stylegan2-car-config-f.pkl)
+| StyleGAN2 Official | | | |
+| :-- | :--: | :--: | :--: |
+| Model (Dataset) | Training Samples | Training Duration (K Images) | FID
+| [ffhq-1024x1024](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/Eb053e-OAblEuS7ZnUto8R0Bub4HtnF5nJVoUUeLPA7Kbw?e=Kv3O8m) |    70,000 |  25,000 | 2.84
+| [church-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/Ec88e85Iz_tMs9C2cSY1Bw4BCmVwCXJCFpHpWMkQ7HkcUA?e=ejGLi6) |   126,227 |  48,000 | 3.86
+| [cat-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/ERM88hE3pTlHm_8D9OMxwYUB20Yij8IshFwk0F6C2LV2pQ?e=4wmOQ5)    | 1,657,266 |  88,000 | 6.93
+| [horse-256x256](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EYdKeNQctlRHlFZX5aUIs2kBicFtS_MwSPSgemPJecVvzw?e=RiEM2H)  | 2,000,340 | 100,000 | 3.43
+| [car-512x384](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155082926_link_cuhk_edu_hk/EWk22jukftBInK98BnW6hrgBSEPxtvYO4li8EFQhIj28wg?e=VeloK1)    | 5,520,756 |  57,000 | 2.32
