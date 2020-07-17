@@ -101,3 +101,14 @@ python face_semantic_editing.py
        --composing_layer 6
        --z_number 30
 ```
+
+## BibTeX
+
+```bibtex
+@inproceedings{gu2020image,
+  title     = {Image Processing Using Multi-Code GAN Prior},
+  author    = {Gu, Jinjin and Shen, Yujun and Zhou, Bolei},
+  booktitle = {CVPR},
+  year      = {2020}
+}
+```
